@@ -1,0 +1,21 @@
+{
+  "name": "ts-paths-esm-jest",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "tsx watch ./src/index.ts",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "test": "jest --watchAll",
+    "test:ci": "jest --ci --collectCoverage"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/jest": "^29.5.8",
+    "jest": "^29.7.0",
+    "jest-watch-typeahead": "^2.2.2",
+    "ts-jest": "^29.1.1",
+    "tsc-alias": "^1.8.8",
+    "tsx": "^4.1.0",
+    "typescript": "^5.2.2"
+  }
+}
