@@ -1,7 +1,9 @@
-const { pathsToModuleNameMapper } = require('ts-jest');
-const { compilerOptions } = require('./tsconfig.json');
+import { pathsToModuleNameMapper } from "ts-jest";
+import tsconfig from "./tsconfig.json" assert { type: "json" };
 
-module.exports = {
+const { compilerOptions } = tsconfig;
+
+export default {
   preset: "ts-jest/presets/default-esm",
   coverageDirectory: "reports/jest-coverage",
   moduleFileExtensions: ["js", "json", "ts", "d.ts"],
