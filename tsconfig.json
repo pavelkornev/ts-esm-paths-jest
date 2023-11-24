@@ -9,7 +9,8 @@
     "resolveJsonModule": true,
     "paths": {
       "src/*": ["src/*"]
-    }
+    },
+    "types": ["node", "jest"],
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "dist"]
